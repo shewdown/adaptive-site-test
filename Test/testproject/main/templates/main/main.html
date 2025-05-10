@@ -1,0 +1,63 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>TestSite</title>
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/media.css' %}">
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <!-- header nav -->
+        <div class="header-nav">
+            <a href="#" class="logo">Kelvin</a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Works</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- header content -->
+        <div class="header-row">
+
+            <div class="header-content">
+                <h1 class="header-heading">Kelvin Kramer<br>Designer & Developer</h1>
+                <p>
+                    I’m a portrait, fashion and lifestyle photographer living In New York City. During my thirteen year
+                    tenure here.
+                </p>
+            </div>
+
+            <div class="header-img">
+                <img src="{% static 'main/images/hero.png' %}" alt="">
+            </div>
+
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="services">
+        <div class="container">
+            <div class="services-row">
+                <div class="service-card"></div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+</footer>
+
+<script src="{% static 'main/js/main.js' %}"></script>
+
+</body>
+</html>
